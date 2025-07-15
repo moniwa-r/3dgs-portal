@@ -1,1 +1,1 @@
-Remove redundant text from portal and optimize human page mobile view
+Adjust spacing between iframes in 3D Samples section for mobile view
