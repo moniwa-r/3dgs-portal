@@ -1,1 +1,1 @@
-Add mkdir -p to Netlify build command
+Remove redundant text from portal and optimize human page mobile view

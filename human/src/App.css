@@ -202,5 +202,6 @@ iframe {
   .section#iframe-samples .col-md-4 {
     padding-left: 10px;
     padding-right: 10px;
+    margin-bottom: 20px; /* Add margin-bottom for spacing between iframes */
   }
 }
