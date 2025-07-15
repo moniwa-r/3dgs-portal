@@ -1,1 +1,1 @@
-Add YURU-CHARA service to portal page
+Update portal page buttons to Coming Soon and add Navbar
