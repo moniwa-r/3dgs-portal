@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3DGS Services Portal</title>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Orbitron', sans-serif;
+            background-color: #121212;
+            color: #ffffff;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+            text-align: center;
+        }
+        h1 {
+            font-size: 3em;
+            color: #0d6efd;
+            text-shadow: 0 0 15px #0d6efd;
+            margin-bottom: 20px;
+        }
+        p {
+            font-size: 1.2em;
+            margin-bottom: 40px;
+        }
+        .service-links a {
+            display: inline-block;
+            background-color: #0d6efd;
+            color: #ffffff;
+            padding: 15px 30px;
+            margin: 10px;
+            border-radius: 5px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: background-color 0.3s ease, transform 0.2s ease;
+            box-shadow: 0 0 10px rgba(13, 110, 253, 0.5);
+        }
+        .service-links a:hover {
+            background-color: #0a58ca;
+            transform: translateY(-3px);
+            box-shadow: 0 0 20px rgba(13, 110, 253, 0.8);
+        }
+    </style>
+</head>
+<body>
+    <h1>Welcome to 3DGS Services</h1>
+    <p>様々な3DGS作成サービスを提供しています。</p>
+    <div class="service-links">
+        <a href="/human">人物3DGS作成サービス</a>
+        <!-- 将来的に他のサービスへのリンクを追加できます -->
+        <!-- <a href="/object">オブジェクト3DGS作成サービス (準備中)</a> -->
+        <!-- <a href="/architecture">建築物3DGS作成サービス (準備中)</a> -->
+    </div>
+</body>
+</html>
