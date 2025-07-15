@@ -15,5 +15,5 @@
 
 [context.production.build]
   base = "human" # human-3dgs-lp のディレクトリ
-  publish = "human/build" # human-3dgs-lp のビルド結果のパス
+  publish = "build" # human-3dgs-lp のビルド結果のパス
   command = "npm install && npm run build" # human-3dgs-lp のビルドコマンド
