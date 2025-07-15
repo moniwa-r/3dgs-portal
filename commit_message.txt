@@ -1,1 +1,1 @@
-Fix Netlify publish path for human subdirectory
+Refactor Netlify config for monorepo deployment

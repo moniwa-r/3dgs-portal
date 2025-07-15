@@ -1,7 +1,7 @@
 # Netlify configuration for monorepo
 [build]
   publish = "dist" # All built files will be published from this directory
-  command = "npm install --prefix human && npm run build --prefix human && cp index.html dist/index.html && cp _redirects dist/_redirects && cp -r human/build dist/human"
+  command = "npm install --prefix human && npm run build --prefix human && mkdir -p dist && cp index.html dist/index.html && cp _redirects dist/_redirects && cp -r human/build dist/human"
 
 [build.environment]
   # ReactアプリのPUBLIC_URLを設定
