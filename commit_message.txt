@@ -1,1 +1,1 @@
-Update portal page buttons to Coming Soon and add Navbar
+Adjust portal page main title position to avoid header overlap
