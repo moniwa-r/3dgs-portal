@@ -10,10 +10,6 @@
             font-family: 'Orbitron', sans-serif;
             background-color: #121212;
             color: #ffffff;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
             min-height: 100vh;
             margin: 0;
             text-align: center;
@@ -29,15 +25,22 @@
             font-size: 1.2em;
             margin-bottom: 40px;
         }
+        .services-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px; /* Space between service items */
+            padding: 20px;
+        }
         .service-item {
             background-color: #1e1e1e;
             border: 1px solid #0d6efd;
             border-radius: 10px;
             padding: 20px;
-            margin: 20px 0;
             box-shadow: 0 0 20px rgba(13, 110, 253, 0.5);
-            max-width: 800px; /* Limit width for better readability */
+            max-width: 450px; /* Smaller width for multiple items per row */
             width: 100%;
+            flex-grow: 1; /* Allow items to grow */
         }
         .service-item h2 {
             color: #0d6efd;
@@ -53,7 +56,7 @@
             border-radius: 8px;
             box-shadow: 0 0 15px rgba(13, 110, 253, 0.7);
             width: 100%; /* Make iframe responsive */
-            height: 500px; /* Set a default height */
+            height: 300px; /* Smaller default height */
         }
         .service-item .button-link {
             display: inline-block;
@@ -69,24 +72,33 @@
             background-color: #0a58ca;
             transform: translateY(-2px);
         }
+
+        /* Mobile specific styles */
+        @media (max-width: 768px) {
+            .service-item {
+                max-width: 100%; /* Full width on mobile */
+            }
+        }
     </style>
 </head>
 <body>
     <h1>Welcome to 3DGS Services</h1>
     <p>様々な3DGS作成サービスを提供しています。あなたのニーズに合わせた最適なソリューションを見つけてください。</p>
 
-    <div class="service-item">
-        <h2>Human</h2>
-        <p>あなたの全身を高精細な3DGSモデルとしてデジタル保存。SNSでの新しい自己表現や、ウェブサイトでの活用に最適です。</p>
-        <iframe id="viewer" width="800" height="500" allow="fullscreen; xr-spatial-tracking" src="https://superspl.at/s?id=f86e4816"></iframe>
-        <a href="/human" class="button-link">サービス詳細を見る</a>
-    </div>
+    <div class="services-container">
+        <div class="service-item">
+            <h2>Human</h2>
+            <p>あなたの全身を高精細な3DGSモデルとしてデジタル保存。SNSでの新しい自己表現や、ウェブサイトでの活用に最適です。</p>
+            <iframe id="viewer" width="800" height="300" allow="fullscreen; xr-spatial-tracking" src="https://superspl.at/s?id=f86e4816"></iframe>
+            <a href="/human" class="button-link">サービス詳細を見る</a>
+        </div>
 
-    <div class="service-item">
-        <h2>Motorcycle</h2>
-        <p>製品や美術品など、あらゆるオブジェクトをリアルな3DGSモデルに。ECサイトでの商品紹介や、デジタルアーカイブに活用できます。</p>
-        <iframe id="viewer_object" width="800" height="500" allow="fullscreen; xr-spatial-tracking" src="https://superspl.at/s?id=891a7694"></iframe>
-        <a href="/motorcycle" class="button-link">サービス詳細を見る</a>
+        <div class="service-item">
+            <h2>Motorcycle</h2>
+            <p>製品や美術品など、あらゆるオブジェクトをリアルな3DGSモデルに。ECサイトでの商品紹介や、デジタルアーカイブに活用できます。</p>
+            <iframe id="viewer_object" width="800" height="300" allow="fullscreen; xr-spatial-tracking" src="https://superspl.at/s?id=891a7694"></iframe>
+            <a href="/motorcycle" class="button-link">サービス詳細を見る</a>
+        </div>
     </div>
 
 </body>
