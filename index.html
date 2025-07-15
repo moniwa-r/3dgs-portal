@@ -17,6 +17,7 @@
             min-height: 100vh;
             margin: 0;
             text-align: center;
+            padding: 20px; /* Add some padding */
         }
         h1 {
             font-size: 3em;
@@ -28,33 +29,70 @@
             font-size: 1.2em;
             margin-bottom: 40px;
         }
-        .service-links a {
+        .service-item {
+            background-color: #1e1e1e;
+            border: 1px solid #0d6efd;
+            border-radius: 10px;
+            padding: 20px;
+            margin: 20px 0;
+            box-shadow: 0 0 20px rgba(13, 110, 253, 0.5);
+            max-width: 800px; /* Limit width for better readability */
+            width: 100%;
+        }
+        .service-item h2 {
+            color: #0d6efd;
+            font-size: 2em;
+            margin-bottom: 15px;
+        }
+        .service-item p {
+            font-size: 1em;
+            margin-bottom: 20px;
+        }
+        .service-item iframe {
+            border: none; /* Remove default iframe border */
+            border-radius: 8px;
+            box-shadow: 0 0 15px rgba(13, 110, 253, 0.7);
+            width: 100%; /* Make iframe responsive */
+            height: 500px; /* Set a default height */
+        }
+        .service-item .button-link {
             display: inline-block;
             background-color: #0d6efd;
             color: #ffffff;
-            padding: 15px 30px;
-            margin: 10px;
+            padding: 10px 20px;
             border-radius: 5px;
             text-decoration: none;
             font-weight: bold;
             transition: background-color 0.3s ease, transform 0.2s ease;
-            box-shadow: 0 0 10px rgba(13, 110, 253, 0.5);
         }
-        .service-links a:hover {
+        .service-item .button-link:hover {
             background-color: #0a58ca;
-            transform: translateY(-3px);
-            box-shadow: 0 0 20px rgba(13, 110, 253, 0.8);
+            transform: translateY(-2px);
         }
     </style>
 </head>
 <body>
     <h1>Welcome to 3DGS Services</h1>
-    <p>様々な3DGS作成サービスを提供しています。</p>
-    <div class="service-links">
-        <a href="/human">人物3DGS作成サービス</a>
-        <!-- 将来的に他のサービスへのリンクを追加できます -->
-        <!-- <a href="/object">オブジェクト3DGS作成サービス (準備中)</a> -->
-        <!-- <a href="/architecture">建築物3DGS作成サービス (準備中)</a> -->
+    <p>様々な3DGS作成サービスを提供しています。あなたのニーズに合わせた最適なソリューションを見つけてください。</p>
+
+    <div class="service-item">
+        <h2>人物3DGS作成サービス</h2>
+        <p>あなたの全身を高精細な3DGSモデルとしてデジタル保存。SNSでの新しい自己表現や、ウェブサイトでの活用に最適です。</p>
+        <iframe id="viewer" width="800" height="500" allow="fullscreen; xr-spatial-tracking" src="https://superspl.at/s?id=f86e4816"></iframe>
+        <p style="margin-top: 20px;">詳細はこちらから。</p>
+        <a href="/human" class="button-link">サービス詳細を見る</a>
     </div>
+
+    <!-- 将来的に他のサービスを追加する際の例 -->
+    <!--
+    <div class="service-item">
+        <h2>オブジェクト3DGS作成サービス</h2>
+        <p>製品や美術品など、あらゆるオブジェクトをリアルな3DGSモデルに。ECサイトでの商品紹介や、デジタルアーカイブに活用できます。</p>
+        <iframe id="viewer_object" width="800" height="500" allow="fullscreen; xr-spatial-tracking" src="https://superspl.at/s?id=ANOTHER_OBJECT_ID"></iframe>
+        <p style="margin-top: 20px;">詳細はこちらから。</p>
+        <a href="/object" class="button-link">サービス詳細を見る</a>
+    </div>
+    -->
+
 </body>
 </html>
