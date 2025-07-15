@@ -1,1 +1,1 @@
-Adjust portal page main title position to avoid header overlap
+Increase padding-top on portal page body to prevent title overlap
