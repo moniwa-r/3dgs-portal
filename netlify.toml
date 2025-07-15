@@ -1,0 +1,19 @@
+# 3DGS Portal (Root site)
+[build]
+  publish = "." # 3dgs-portal のビルド結果のパス (リポジトリのルート)
+  command = "echo 'No build command for static site'" # 静的サイトなのでビルドコマンドは不要
+
+# Human 3DGS Service (Subdirectory)
+[[redirects]]
+  from = "/human/*"
+  to = "/human/:splat"
+  status = 200
+
+[build.environment]
+  # ReactアプリのPUBLIC_URLを設定
+  PUBLIC_URL = "/human"
+
+[context.production.build]
+  base = "human" # human-3dgs-lp のディレクトリ
+  publish = "human/build" # human-3dgs-lp のビルド結果のパス
+  command = "npm install && npm run build" # human-3dgs-lp のビルドコマンド
