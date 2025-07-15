@@ -1,1 +1,1 @@
-Update Motorcycle service description and button spacing on portal page
+Add YURU-CHARA service to portal page
