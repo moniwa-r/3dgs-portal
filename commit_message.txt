@@ -1,1 +1,1 @@
-Increase padding-top on portal page body to prevent title overlap
+Further increase padding-top on portal page body and remove h1 margin-top
