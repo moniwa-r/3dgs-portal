@@ -1,1 +1,1 @@
-Refactor Netlify config for monorepo deployment
+Add mkdir -p to Netlify build command

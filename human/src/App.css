@@ -186,11 +186,21 @@ iframe {
     max-width: 300px; /* Limit card width on mobile */
     margin-left: auto;
     margin-right: auto;
+    margin-bottom: 20px; /* Add more space between cards */
   }
 
   /* If iframes are directly inside Card.Body or similar, target them */
-  .card iframe {
-    width: 100%; /* Ensure iframe fits within the card */
-    height: 200px; /* Adjust iframe height for mobile */
+  .card iframe,
+  .section#iframe-samples iframe {
+    max-width: 280px; /* Limit iframe width on mobile */
+    margin-left: auto;
+    margin-right: auto;
+    display: block; /* Center the iframe */
+    height: 180px; /* Adjust iframe height for mobile */
+  }
+
+  .section#iframe-samples .col-md-4 {
+    padding-left: 10px;
+    padding-right: 10px;
   }
 }
