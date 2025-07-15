@@ -1,0 +1,196 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap');
+
+body {
+  background-color: #121212 !important;
+  color: #ffffff !important;
+  font-family: 'Orbitron', sans-serif !important;
+  padding-top: 56px; /* Adjust this value based on your Navbar height */
+}
+
+@keyframes gradientAnimation {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+.App-header {
+  background: linear-gradient(-45deg, #0d6efd, #1a1a1a, #2a2a2a, #0d6efd);
+  background-size: 400% 400%;
+  animation: gradientAnimation 15s ease infinite;
+  min-height: 70vh; /* 高さを広げる */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 100px 0;
+  border-bottom: 2px solid #0d6efd; /* ボーダーを強調 */
+  box-shadow: 0 0 30px rgba(13, 110, 253, 0.7); /* シャドウを追加 */
+}
+
+.App-header h1 {
+  font-size: 4.5rem; /* フォントサイズを大きく */
+  font-weight: bold;
+  text-shadow: 0 0 25px #0d6efd, 0 0 10px #fff; /* シャドウを強調 */
+  letter-spacing: 3px; /* 文字間隔を広げる */
+}
+
+.App-header .lead {
+  font-size: 1.5rem; /* フォントサイズを大きく */
+  margin-top: 20px;
+  text-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+}
+
+.section {
+  padding: 100px 0; /* パディングを増やす */
+}
+
+.section-title {
+  text-align: center;
+  margin-bottom: 80px; /* マージンを増やす */
+  font-size: 3.5rem; /* フォントサイズを大きく */
+  font-weight: bold;
+  color: #0d6efd;
+  position: relative;
+  padding-bottom: 20px;
+}
+
+.section-title::after {
+  content: '';
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  transform: translateX(-50%);
+  width: 100px;
+  height: 5px;
+  background-color: #0d6efd;
+  border-radius: 5px;
+  box-shadow: 0 0 15px #0d6efd;
+}
+
+.card {
+  background-color: #1e1e1e;
+  border: 1px solid #0d6efd;
+  color: #ffffff;
+  transition: transform 0.4s ease, box-shadow 0.4s ease; /* トランジションを滑らかに */
+  border-radius: 10px; /* 角を丸く */
+  overflow: hidden;
+}
+
+.card:hover {
+  transform: translateY(-15px) scale(1.02); /* ホバー時の動きを強調 */
+  box-shadow: 0 0 30px #0d6efd; /* シャドウを強調 */
+}
+
+.btn-primary {
+  background-color: #0d6efd;
+  border-color: #0d6efd;
+  transition: background-color 0.3s ease, transform 0.2s ease; /* トランジションを追加 */
+  padding: 15px 30px; /* パディングを増やす */
+  font-size: 1.2rem; /* フォントサイズを大きく */
+  border-radius: 50px; /* ボタンを丸く */
+}
+
+.btn-primary:hover {
+  background-color: #0a58ca;
+  border-color: #0a58ca;
+  transform: translateY(-3px); /* ホバー時に少し浮き上がる */
+}
+
+.form-control {
+    background-color: #2a2a2a;
+    color: #e0e0e0; /* 記入欄の文字色を明るく */
+    border: 1px solid #0d6efd;
+    border-radius: 5px;
+}
+
+.form-control::placeholder {
+    color: #aaaaaa; /* プレースホルダーの文字色も調整 */
+}
+
+.form-control:focus {
+    background-color: #2a2a2a;
+    color: #e0e0e0;
+    border-color: #fff;
+    box-shadow: 0 0 15px #0d6efd; /* シャドウを強調 */
+}
+
+.form-label {
+    color: #ffffff;
+    font-weight: bold;
+}
+
+.img-fluid {
+  border-radius: 15px;
+  box-shadow: 0 0 25px rgba(13, 110, 253, 0.5);
+}
+
+iframe {
+  border: 1px solid #0d6efd;
+  border-radius: 15px;
+  box-shadow: 0 0 25px rgba(13, 110, 253, 0.5);
+}
+
+.feature-icon-wrapper {
+  /* background-color: #0d6efd; */ /* 背景色を削除 */
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 20px auto;
+  /* box-shadow: 0 0 20px rgba(13, 110, 253, 0.7); */ /* シャドウを削除 */
+}
+
+.feature-icon {
+  color: #0d6efd; /* アイコンの色をプライマリカラーに */
+  font-size: 60px; /* アイコンサイズを調整 */
+  transition: transform 0.3s ease; /* ホバーアニメーション */
+}
+
+.feature-icon:hover {
+  transform: scale(1.2); /* ホバーで拡大 */
+}
+
+.flow-step-number {
+  font-size: 5rem;
+  font-weight: bold;
+  color: #0d6efd;
+  text-shadow: 0 0 15px #0d6efd;
+  margin-bottom: 20px;
+}
+
+.flow-step-text {
+  font-size: 1.1rem;
+}
+
+.map-container {
+  border: 2px solid #0d6efd;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 0 25px rgba(13, 110, 253, 0.5);
+}
+
+/* Mobile specific styles */
+@media (max-width: 767px) {
+  .section {
+    padding: 40px 0; /* Adjust section padding for mobile */
+  }
+
+  .section-title {
+    font-size: 2rem; /* Adjust title size for mobile */
+    margin-bottom: 40px;
+  }
+
+  .card {
+    max-width: 300px; /* Limit card width on mobile */
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  /* If iframes are directly inside Card.Body or similar, target them */
+  .card iframe {
+    width: 100%; /* Ensure iframe fits within the card */
+    height: 200px; /* Adjust iframe height for mobile */
+  }
+}
