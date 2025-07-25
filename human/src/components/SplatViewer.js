@@ -8,7 +8,7 @@ const SplatViewer = ({ url }) => {
   const [model, setModel] = useState(null);
   const [isLoading, setIsLoading] = useState(true);
   const [error, setError] = useState(null);
-  const [camPos, setCamPos] = useState(new pc.Vec3(0, 0, 70)); // Z=70を初期値として設定
+  const camPos = new pc.Vec3(0, 0, 70); // Z=70を初期値として設定
   const [modelPos, setModelPos] = useState(new pc.Vec3(0, 0, 0));
   const appRef = useRef(null);
 
