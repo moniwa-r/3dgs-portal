@@ -4,6 +4,9 @@ import { FaUserCheck, FaBolt, FaCamera, FaCalendarAlt, FaDownload, FaSave, FaSha
 import { Fade, Slide } from 'react-awesome-reveal';
 import './App.css';
 
+import SplatViewer from './components/SplatViewer';
+import { Application } from '@playcanvas/react';
+
 function App() {
   return (
     <div className="App">
@@ -112,20 +115,12 @@ function App() {
               <h2 className="section-title">3D Samples</h2>
             </Fade>
             <Row className="mb-5">
-              <Col md={4}>
-                <Fade delay={0} triggerOnce>
-                  <iframe title="sample1" id="viewer1" width="100%" height="300" allow="fullscreen; xr-spatial-tracking" src="https://superspl.at/s?id=5278dc8a"></iframe>
-                </Fade>
-              </Col>
-              <Col md={4}>
-                <Fade delay={200} triggerOnce>
-                  <iframe title="sample2" id="viewer2" width="100%" height="300" allow="fullscreen; xr-spatial-tracking" src="https://superspl.at/s?id=c2ec7706"></iframe>
-                </Fade>
-              </Col>
-              <Col md={4}>
-                <Fade delay={400} triggerOnce>
-                  <iframe title="sample3" id="viewer3" width="100%" height="300" allow="fullscreen; xr-spatial-tracking" src="https://superspl.at/s?id=f86e4816"></iframe>
-                </Fade>
+              <Col md={12}>
+                <div style={{ height: '70vh' }}>
+                  <Application>
+                    <SplatViewer url={process.env.PUBLIC_URL + "/test/meta.json"} />
+                  </Application>
+                </div>
               </Col>
             </Row>
           </Container>
