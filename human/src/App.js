@@ -4,9 +4,6 @@ import { FaUserCheck, FaBolt, FaCamera, FaCalendarAlt, FaDownload, FaSave, FaSha
 import { Fade, Slide } from 'react-awesome-reveal';
 import './App.css';
 
-import SplatViewer from './components/SplatViewer';
-import { Application } from '@playcanvas/react';
-
 function App() {
   return (
     <div className="App">
@@ -114,13 +111,11 @@ function App() {
             <Fade direction="up" triggerOnce>
               <h2 className="section-title">3D Samples</h2>
             </Fade>
-            <Row className="mb-5">
-              <Col md={12}>
-                <div style={{ height: '70vh' }}>
-                  <Application>
-                    <SplatViewer url={process.env.PUBLIC_URL + "/test2/meta.json"} />
-                  </Application>
-                </div>
+            <Row className="justify-content-center">
+              <Col md={8}>
+                <Fade triggerOnce>
+                  <iframe title="3DGS Sample" id="viewer" width="100%" height="500" allow="fullscreen; xr-spatial-tracking" src="https://superspl.at/s?id=3fc59caa"></iframe>
+                </Fade>
               </Col>
             </Row>
           </Container>
