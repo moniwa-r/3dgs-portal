@@ -118,7 +118,7 @@ function App() {
               <Col md={12}>
                 <div style={{ height: '70vh' }}>
                   <Application>
-                    <SplatViewer url={process.env.PUBLIC_URL + "/test/meta.json"} />
+                    <SplatViewer url={process.env.PUBLIC_URL + "/test2/meta.json"} />
                   </Application>
                 </div>
               </Col>
